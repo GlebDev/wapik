@@ -40,6 +40,7 @@
     font-style: normal;
     font-weight: normal;
 }
+
 body {
     margin: 0;
     font-family: RobotoRegular;
@@ -55,16 +56,8 @@ body {
 }
 
 .section {
-    padding: 50px 0;
+    padding: 100px 0;
     text-align: center;
-    box-sizing: border-box;
-}
-
-.content {
-    max-width: 1000px;
-    width: 100%;
-    display: inline-block;
-    padding: 0 10px;
     box-sizing: border-box;
 }
 
@@ -79,13 +72,13 @@ body {
     padding: 0 0 170px 0;
 }
 
-.section.header .content .headline {
+.section.header .container .headline {
     text-align: left;
 }
 
 .section.header .headline .h-01 {
     margin-top: 4em;
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
     font-weight: 200;
 }
 
@@ -108,7 +101,7 @@ body {
     padding: 15px 50px;
 }
 
-.section.header .navbar {
+.section.header .header__navbar {
     width: 100%;
     padding: 20px 0 90px 0;
     text-transform: uppercase;
@@ -116,17 +109,17 @@ body {
     background: linear-gradient(top, rgba(0, 0, 0, 0.5) -20%, rgba(255, 255, 255, 0));
 }
 
-.section.header .navbar .content {
+.section.header .header__navbar .container {
     padding-bottom: 20px;
     border-bottom: solid rgba(255, 255, 255, 0.2) 1px;
 }
 
-.section.header .navbar .content .navigation-block {
+.section.header .header__navbar .container .navigation-block {
     float: right;
 }
 
-.section.header .navbar .h-01,
-.section.header .navbar .copy-02 {
+.section.header .header__navbar .h-01,
+.section.header .header__navbar .copy-02 {
     color: white;
     text-decoration: none;
     display: inline-block;
@@ -134,7 +127,7 @@ body {
     float: left;
 }
 
-.section.header .navbar .h-01 {
+.section.header .header__navbar .h-01 {
     font-size: 27px;
     font-weight: 700;
     padding-right: 20px;
@@ -142,19 +135,21 @@ body {
     border-right: solid rgba(255, 255, 255, 0.2) 1px;
 }
 
-.section.header .navbar .copy-02 {
+.section.header .header__navbar .copy-02 {
     font-size: 13px;
     font-weight: 400;
     padding: 0 20px;
+    text-align: justify;
 }
-.section.header .navbar  .copy-02.phone-number:before {
-    content: url(../images/Vector-Smart-Object.png);
-  display: inline-block;
+
+.section.header .header__navbar .copy-02.phone-number:before {
+    content: url(../images/Phone.png);
+    display: inline-block;
     padding: 3px 8px;
 }
 
-.section.header .navbar .copy-02.navigation,
-.section.header .navbar .button {
+.section.header .header__navbar .copy-02.navigation,
+.section.header .header__navbar .button {
     float: right;
     color: rgba(255, 255, 255, 0.7);
     box-sizing: padding-box;
@@ -162,11 +157,48 @@ body {
     vertical-align: middle;
 }
 
-.section.header .navbar .copy-02.navigation.active {
+.section.header .header__navbar .copy-02.navigation.active {
     color: white;
 }
 
-.section.header .navbar .button {
+.section.header .header__navbar .button {
     color: white;
     background-color: rgba(255, 255, 255, 0.35);
+}
+
+.section.about h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #0f5f5c;
+}
+
+.section.about .copy-02 {
+    font-weight: 400;
+    color: #83a7a5;
+    margin-bottom: 60px;
+}
+
+.section.about .copy-02.col-sm-6 {
+    float: none;
+    margin: 0 auto 60px auto;
+}
+
+.section.about aside {
+    padding: 0 40px;
+}
+
+.section.about aside .heading {
+    font-weight: 400;
+    font-size: 18px;
+    color: #0f5f5c;
+}
+
+.section.about aside .copy-02 {
+    text-align: justify;
+    font-size: 14px;
+}
+
+.section.about aside .icon {
+    width: 52px;
+    height: 52px;
 }
