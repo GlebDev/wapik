@@ -166,30 +166,34 @@ body {
     background-color: rgba(255, 255, 255, 0.35);
 }
 
-.section.about h1 {
+.section.about h1,
+.section.description-1 h1 {
     font-size: 32px;
     font-weight: 300;
     color: #0f5f5c;
+    font-family: RobotoLight;
 }
 
-.section.about .copy-02 {
+.section.about .copy-02,
+.section.description-1 .copy-02 {
     font-weight: 400;
     color: #83a7a5;
-    margin-bottom: 60px;
 }
 
-.section.about .copy-02.col-sm-6 {
+.section.about .copy-02.col-sm-6,
+.section.description-1 .copy-02.col-sm-6 {
     float: none;
     margin: 0 auto 60px auto;
 }
 
 .section.about aside {
     padding: 0 40px;
+    margin-bottom: 60px;
 }
 
 .section.about aside .heading {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: #0f5f5c;
 }
 
@@ -201,4 +205,74 @@ body {
 .section.about aside .icon {
     width: 52px;
     height: 52px;
+}
+
+.section.about .separator img {
+    float: none;
+}
+
+.section.about .separator {
+    margin-bottom: 50px;
+}
+
+.section.about aside.col-sm-6 * {
+    float: left;
+    margin: 5px 15px;
+}
+
+.section.about aside.col-sm-6 img {
+    height: 32px;
+}
+
+.section.description-1 {
+    background: #eef1ec;
+    padding-bottom: 0;
+}
+
+.section.description-1 .heading {
+    font-size: 32px;
+    color: #0f5f5c;
+    text-align: left;
+    font-family: RobotoLight;
+}
+
+.section.description-1 aside.features {
+    padding-top: 100px;
+}
+
+.section.description-1 aside.features .copy-02 {
+    font-size: 14px;
+    color: #83a7a5;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.section.description-1 aside.features ul.copy-02 {
+    margin-left: -10px;
+    list-style: url(../images/oK.png);
+}
+
+.section.description-2 aside.text {
+    text-align: left;
+    padding-top: 70px;
+}
+
+.section.description-2 aside.text p.heading {
+    font-family: RobotoLight;
+    font-size: 22px;
+    color: #83a7a5;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    margin-bottom: 2em;
+}
+
+.section.description-2 aside.text p.name {
+    font-size: 14px;
+    color: #6fb048;
+    font-family: RobotoMedium;
+}
+
+.section.description-2 aside.text p.status {
+    font-size: 14px;
+    color: #83a7a5;
 }
