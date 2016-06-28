@@ -99,6 +99,7 @@ body {
     text-decoration: none;
     background: #6fb048;
     padding: 15px 50px;
+    border-radius: 2px;
 }
 
 .section.header .header__navbar {
@@ -263,7 +264,6 @@ body {
     color: #83a7a5;
     font-weight: 300;
     letter-spacing: 0.8px;
-    margin-bottom: 2em;
 }
 
 .section.description-2 aside.text p.name {
@@ -272,7 +272,128 @@ body {
     font-family: RobotoMedium;
 }
 
+.section.description-3 {
+    background: #eef1ec;
+    padding-bottom: 150px;
+}
+
+.section.description-3 aside.text {
+    text-align: left;
+    padding-top: 70px;
+    clear: both;
+}
+
 .section.description-2 aside.text p.status {
     font-size: 14px;
     color: #83a7a5;
+}
+
+.section.description-3 aside.text p.heading {
+    font-size: 32px;
+    color: #0f5f5c;
+    font-family: RobotoLight;
+}
+
+.section.description-3 aside.text p.copy-02 {
+    font-size: 14px;
+    color: #83a7a5;
+}
+
+.section.description-3 img {
+    right: 0px;
+    position: absolute;
+}
+
+.section.pricing aside.text p.heading {
+    font-size: 32px;
+    color: #0f5f5c;
+    font-family: RobotoLight;
+}
+
+.section.pricing aside.text p.copy-02 {
+    font-size: 15px;
+    color:#83a7a5;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+.section.pricing .plan-table{
+    width: 700px;
+    margin: auto;
+}
+.section.pricing .plan-table td{
+    padding: 20px;
+}
+.section.pricing .plan-table .heading{
+    font-size: 15px;
+    color: #6fb048;
+    text-transform: uppercase;
+    font-family: RobotoBold;
+}
+.section.pricing .plan-table .price{
+    font-size: 60px;
+    font-family: RobotoBold;
+    color: #0f5f5c;
+    margin-bottom:-0.2em;
+}
+.section.pricing .plan-table .description{
+    margin-top: 0px;
+    font-size:14px;
+    color:#0f5f5c;
+    margin-bottom: 2em;
+    font-family: RobotoBold;
+}
+.section.pricing .plan-table .features{
+    font-size:14px;
+    color:#83a7a5;
+    margin-bottom: 0.5em;
+}
+.section.pricing .plan-table .btn{
+    margin-top: 1.5em;
+    font-size:13px;
+    padding:10px 25px ;
+    text-transform: uppercase;
+    border-radius:2px;
+    color: #ffffff;
+}
+.section.pricing .plan-table .basic .btn{
+    background: #83a7a5;
+}
+.section.pricing .plan-table .plus .btn{
+    background: #6fb048;
+}
+.section.pricing .plan-table .premium .btn{
+    background: #83a7a5;
+}
+.section.pricing .heading.h-01{
+    font-size:22px;
+    color:#0f5f5c;
+    margin-top: 3em;
+}
+.section.pricing .list{
+    font-size: 14px;
+    color: #83a7a5;
+    padding:30px 50px 80px 50px;
+}
+.section.pricing .list .item{
+    float: left;
+        margin-left: -10px;
+    list-style: url(../images/oK.png);
+    margin-bottom: 10px;
+}
+.section.pricing .contact-inf>.heading{
+    font-size:32px;
+    color:#6fb048;
+    font-family: RobotoLight;
+}
+.section.pricing .contact-inf>.copy-02{
+    font-size:15px;
+    color: #83a7a5;
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+}
+.section.pricing .contact-inf>.link{
+    font-size:18px;
+    color: #0f5f5c;
+
 }
