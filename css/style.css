@@ -130,7 +130,7 @@ body {
 
 .section.header .header__navbar .h-01 {
     font-size: 27px;
-    font-weight: 700;
+    font-family: RobotoBold;
     padding-right: 20px;
     line-height: 22px;
     border-right: solid rgba(255, 255, 255, 0.2) 1px;
@@ -415,9 +415,9 @@ body {
 .section.section_downald {
     background: url(images/background.png);
     padding: 40px 0;
-
 }
-.section.section_downald>.container{
+
+.section.section_downald>.container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -426,11 +426,12 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack:center;
-    -webkit-justify-content:center;
-    -ms-flex-pack:center;
-    justify-content:space-between;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
 }
+
 .section.section_downald .text {
     text-align: left;
 }
@@ -438,7 +439,6 @@ body {
 .section.section_downald .text .h-01 {
     font-size: 28px;
     color: #0f5f5c;
-    font-family: RobotoLight;
 }
 
 .section.section_downald .text .copy-02 {
@@ -453,4 +453,72 @@ body {
     border-radius: 2px;
     color: #ffffff;
     background: #6fb048;
+}
+
+.section.footer {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 13px;
+    color: #83a7a5;
+}
+
+.section.footer .bottom-line {
+    border-bottom: solid 1px #eef1ec;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.section.footer .heading {
+    font-size: 13px;
+    color: #0f5f5c;
+    font-family: RobotoBold;
+    margin-bottom: 20px;
+}
+
+.section.footer .heading.heading_wapik {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.section.footer .list {
+    list-style: none;
+    padding: 0;
+}
+
+.section.footer .list .item {
+    margin-bottom: 1em;
+}
+
+.section.footer .list .item .link_wapik {
+    color: #0f5f5c;
+}
+
+.section.footer .list .item .item__link {
+    color: #83a7a5;
+}
+
+.section.footer #subscribe {
+    margin-top: 30px;
+}
+
+.section.footer #subscribe>#email {
+    border: none !important;
+    background-color: #eef1ec;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 13px;
+}
+
+.section.footer #subscribe .btn {
+    background-color: #eef1ec;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.section.footer .text {
+    float: left;
+}
+
+.section.footer .social-links {
+    float: right;
 }
