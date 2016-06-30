@@ -1,3 +1,4 @@
+
 /* font-family: "RobotoRegular"; */
 
 @font-face {
@@ -45,6 +46,7 @@ body {
     margin: 0;
     font-family: RobotoRegular;
     font-size: 16px;
+    min-width:720px;
 }
 
 .h-01 {
@@ -91,7 +93,7 @@ body {
     margin-bottom: 2em;
 }
 
-.section.header .headline .button {
+.section.header .headline .btn {
     font-size: 14px;
     font-family: RobotoMedium;
     text-transform: uppercase;
@@ -150,19 +152,20 @@ body {
 }
 
 .section.header .header__navbar .copy-02.navigation,
-.section.header .header__navbar .button {
+.section.header .header__navbar .btn {
     float: right;
     color: rgba(255, 255, 255, 0.7);
-    box-sizing: padding-box;
-    padding: 5px 15px;
+    box-sizing:padding-box;
+    padding: 5px 10px;
     vertical-align: middle;
+    border-radius: 2px;
 }
 
 .section.header .header__navbar .copy-02.navigation.active {
     color: white;
 }
 
-.section.header .header__navbar .button {
+.section.header .header__navbar .btn {
     color: white;
     background-color: rgba(255, 255, 255, 0.35);
 }
@@ -181,8 +184,7 @@ body {
     color: #83a7a5;
 }
 
-.section.about .copy-02.col-sm-6,
-.section.description-1 .copy-02.col-sm-6 {
+.section.about .copy-02.col-md-6{
     float: none;
     margin: 0 auto 60px auto;
 }
@@ -216,12 +218,12 @@ body {
     margin-bottom: 50px;
 }
 
-.section.about aside.col-sm-6 * {
+.section.about aside.col-md-6 * {
     float: left;
     margin: 5px 15px;
 }
 
-.section.about aside.col-sm-6 img {
+.section.about aside.col-md-6 img {
     height: 32px;
 }
 
@@ -235,6 +237,10 @@ body {
     color: #0f5f5c;
     text-align: left;
     font-family: RobotoLight;
+}
+.section.description-1 .copy-02.col-md-6 {
+    margin:0 auto 60px auto;
+    float: none;
 }
 
 .section.description-1 aside.features {
@@ -273,7 +279,7 @@ body {
 }
 
 .section.description-3 {
-    background: #eef1ec;
+    background: #eef1ec url(../images/earth.png) no-repeat right;
     padding-bottom: 150px;
 }
 
@@ -288,6 +294,30 @@ body {
     color: #83a7a5;
 }
 
+.section.description-3>.container{
+/*
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto !important;
+    margin-right: 0;
+    padding-right: 0;
+*/
+}
 .section.description-3 aside.text p.heading {
     font-size: 32px;
     color: #0f5f5c;
@@ -299,9 +329,12 @@ body {
     color: #83a7a5;
 }
 
-.section.description-3 img {
+.section.description-3 img.earth-map {
+/*
     right: 0px;
-    position: absolute;
+    position: relative;
+    float: right;
+*/
 }
 
 .section.pricing aside.text p.heading {
@@ -415,6 +448,7 @@ body {
 .section.section_downald {
     background: url(images/background.png);
     padding: 40px 0;
+    max-height:200px;
 }
 
 .section.section_downald>.container {
@@ -514,6 +548,9 @@ body {
     outline: none !important;
     box-shadow: none !important;
 }
+.section.footer #subscribe .btn:hover i{
+    color: #1faf79;
+}
 
 .section.footer .text {
     float: left;
@@ -521,4 +558,13 @@ body {
 
 .section.footer .social-links {
     float: right;
+}
+.link{
+    text-decoration: none !important;
+}
+.link:hover{
+  opacity: 0.7;
+}
+.btn:hover{
+    opacity: 0.9;
 }
